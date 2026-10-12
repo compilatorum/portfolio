@@ -12,9 +12,12 @@
   <meta property="og:image" content="wordsmith.png">
   <meta property="og:url" content="https://compilatorum.github.io/portfolio/">
   <meta property="og:type" content="website">
-  
+  <!-- Favicon com o Avatar Ilustrado de Johnny (estilo Sandra) -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
   <!-- Google Fonts: Inter & Cinzel & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1037,9 +1040,9 @@
   <header class="site-header">
     <div class="container nav-wrapper">
       <a href="#hero" class="logo-group">
-        <svg class="logo-icon-svg" viewBox="0 0 128 128" style="color: var(--gold-primary);">
-          <use href="#icon-wordsmith-crest"></use>
-        </svg>
+        <div style="position: relative; width: 42px; height: 42px; border-radius: 50%; padding: 2px; background: linear-gradient(135deg, var(--gold-light), var(--gold-primary)); flex-shrink: 0; box-shadow: 0 0 12px var(--gold-glow);">
+          <img src="avatar.png" alt="Avatar João Nitzsche" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block;">
+        </div>
         <div class="logo-text">
           <h1>WORDSMITH LAB</h1>
           <span>Semantic Systems & AI Engineering</span>
@@ -1083,8 +1086,15 @@
           <span>Compilatorum · Living Laboratory</span>
         </div>
 
-        <h1 class="hero-title">JOÃO NITZSCHE</h1>
-        <div class="hero-subtitle">Engenheiro de Computação &nbsp;|&nbsp; Pesquisador Independente &nbsp;|&nbsp; Wordsmith</div>
+        <div class="hero-author-header" style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
+          <div class="avatar-shield-wrapper" style="position: relative; width: 88px; height: 88px; border-radius: 50%; padding: 3px; background: linear-gradient(135deg, var(--gold-light), var(--gold-primary), var(--cyan-primary)); box-shadow: 0 0 25px var(--gold-glow); flex-shrink: 0;">
+            <img src="avatar.png" alt="Avatar Ilustrado de João Nitzsche" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block;">
+          </div>
+          <div>
+            <h1 class="hero-title" style="margin-bottom: 4px; font-size: clamp(2rem, 3.5vw, 3.2rem);">JOÃO NITZSCHE</h1>
+            <div class="hero-subtitle" style="margin-bottom: 0;">Engenheiro de Computação &nbsp;|&nbsp; Pesquisador Independente &nbsp;|&nbsp; Wordsmith</div>
+          </div>
+        </div>
 
         <p class="hero-bio">
           Transformo <strong>linguagem</strong> em estrutura, <strong>contexto</strong> em conhecimento e <strong>conhecimento</strong> em artefatos. Conecto linguística, computação, semiótica e inteligência artificial para projetar sistemas de significado que possam ser compreendidos, reutilizados e transformados.
@@ -1448,22 +1458,49 @@
         <!-- Project 2: IPIT / Ideathon Agentivo -->
         <div class="project-card" data-category="ai">
           <div>
-            <div class="proj-header">
-              <div class="proj-icon-wrapper">
-                <svg viewBox="0 0 24 24"><use href="#icon-spark"></use></svg>
+            <div class="proj-header" style="justify-content: space-between;">
+              <div style="display: flex; align-items: center; gap: 14px;">
+                <div class="proj-icon-wrapper">
+                  <svg viewBox="0 0 24 24"><use href="#icon-spark"></use></svg>
+                </div>
+                <div class="proj-title">
+                  <h4>Ideathon Agentivo (IPIT)</h4>
+                  <span class="proj-tag">Gamificação & Agentes</span>
+                </div>
               </div>
-              <div class="proj-title">
-                <h4>Ideathon Agentivo (IPIT)</h4>
-                <span class="proj-tag">Gamificação & Agentes</span>
+              <div style="width: 40px; height: 40px; border-radius: 50%; padding: 2px; background: linear-gradient(135deg, var(--gold-light), #800020); box-shadow: 0 0 10px rgba(128,0,32,0.4);" title="Parceria com Sandra Maria Pereira">
+                <img src="sandra.jpeg" alt="Sandra Maria Pereira" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
               </div>
             </div>
             <p class="proj-body">
-              Sistema pedagógico de ideação com orquestração multiagente (LangGraph), infoestética interativa, ressonância lógico-estética e sandbox automatizado.
+              Sistema pedagógico de ideação e inovação tecnológica em parceria com <strong>Sandra Maria Pereira</strong>. Orquestração multiagente (LangGraph), infoestética interativa, ressonância lógico-estética e sandbox automatizado.
             </p>
           </div>
           <div class="proj-footer">
             <span>Oracle Cloud & Supabase</span>
             <span style="color: var(--gold-light);">Refatoração Ativa</span>
+          </div>
+        </div>
+
+        <!-- Project: ValueCurator -->
+        <div class="project-card" data-category="web3">
+          <div>
+            <div class="proj-header">
+              <div class="proj-icon-wrapper" style="background: rgba(0, 210, 255, 0.12); width: 48px; height: 48px; overflow: hidden; padding: 4px;">
+                <img src="logo.png" alt="ValueCurator Logo" style="width: 100%; height: 100%; object-fit: contain;">
+              </div>
+              <div class="proj-title">
+                <h4>ValueCurator</h4>
+                <span class="proj-tag">RWA Management</span>
+              </div>
+            </div>
+            <p class="proj-body">
+              <em>The Standard for Secure RWA Management</em>. Curadoria e gestão de ativos do mundo real (RWA), validação de valor, governança algorítmica e arquitetura de microempreendimentos digitais.
+            </p>
+          </div>
+          <div class="proj-footer">
+            <span>RWA Protocol</span>
+            <span style="color: var(--cyan-light);">Secure Asset Standard</span>
           </div>
         </div>
 

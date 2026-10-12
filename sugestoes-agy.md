@@ -63,3 +63,20 @@ A partir do histórico consolidado das sessões de trabalho, da análise do `por
    * Script para compilar seções de `portfolio.md` em nós interativos do `index.html` (para que alterações no markdown reflitam na página e vice-versa).
 4. **Exportação de SVG Tokens:**
    * Centralizar todos os ícones desenhados em um arquivo `assets/icons.svg` para consumo em qualquer projeto do ecossistema compilatorum.
+
+---
+
+## 5. 🎭 Identidade Visual, Avatares & Favicon
+
+* **Avatar de Johnny (`avatar.png` / `johnny-avatar.png`):**
+  * Gerado a partir de foto pessoal (`johnny.png`), transposto para a infoestética de ilustração vetorial/comic cel-shading em ressonância exata com o avatar de Sandra (`sandra.jpeg`).
+  * Enquadrado em brasão/escudo heráldico com borda áurea dupla e fundo bordô/maroon acadêmico.
+  * Captura expressiva: cabelos ondulados escuros, barba grisalha cheia e sorriso convidativo em traje profissional elegante.
+* **Favicon Multiformato:**
+  * `favicon.svg`: Vetor SVG nativo com máscara circular e anel de ouro luminoso (`#d4af37`, `#fbe39f`), contendo o avatar.
+  * `favicon.png`, `favicon-32x32.png`, `favicon-16x16.png`, `favicon.ico`: Formatos rasterizados de alta fidelidade para compatibilidade total entre navegadores desktop e mobile.
+* **Integração no Portfólio:**
+  * Avatar incorporado no cabeçalho (logo do site) e no cabeçalho do Hero ao lado do nome João Nitzsche.
+  * Avatar de Sandra Maria Pereira incorporado no card do projeto IPIT (Ideathon Agentivo).
+  * Logotipo do ValueCurator (`logo.png`) incorporado no card de gestão RWA.
+
